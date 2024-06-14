@@ -1,4 +1,10 @@
 @import "variables";
+
+* {
+  font-family: $content-font;
+  font-weight: 300;
+}
+
 body {
   background-color: $primary-background-color;
 }

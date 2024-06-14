@@ -17,3 +17,6 @@ node_modules/
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+#other files to be ignored (only for me, delete this part)
+.vscode

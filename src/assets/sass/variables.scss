@@ -1,6 +1,15 @@
+@font-face {
+  font-family: "Oswalds";
+  src: url(../fonts/Oswald-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url(../fonts/PublicSans-Regular.otf) format("opentype"); // Assuming the font file format is TrueType (ttf)
+}
 $primary-background-color: #fff;
 $alt-background-color: #f0f0f0;
 $primary-accent-color: rgb(119, 46, 255);
 $alt-accent-color: rgb(255, 192, 45);
 
-$serif-font: "Roboto", sans-serif;
+$heading-font: "Oswald", "Times New Roman, serif";
+$content-font: "Public Sans";

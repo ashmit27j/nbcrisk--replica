@@ -132,3 +132,7 @@ This project is licensed under the MIT License. See the LICENSE file
 
 ```
 ````
+
+### Notes & Random Facts:
+
+There are two syntaxes for sass, one type of file has the extension: .scss and one has .sass
