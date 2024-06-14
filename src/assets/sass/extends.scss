@@ -1,0 +1,9 @@
+@import "variables";
+%button-hover-logo {
+  background-color: $primary-button-color;
+  //   color: ;
+  &:hover {
+    background-color: $alt-accent-color;
+    transition: background-color 0.3s ease;
+  }
+}

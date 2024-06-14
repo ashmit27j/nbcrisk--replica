@@ -6,10 +6,25 @@
   font-family: "Public Sans";
   src: url(../fonts/PublicSans-Regular.otf) format("opentype"); // Assuming the font file format is TrueType (ttf)
 }
-$primary-background-color: #fff;
-$alt-background-color: #f0f0f0;
-$primary-accent-color: rgb(119, 46, 255);
-$alt-accent-color: rgb(255, 192, 45);
+//colors:
+$white: rgb(255, 255, 255);
+$blue: rgb(0, 115, 255);
+$black: rgb(16, 24, 32);
 
+//background colors:
+$primary-background-color: rgb(255, 255, 255);
+$alt-background-color: rgb(240, 240, 240);
+
+//text colors:
+$primary-text-color: rgb(16, 24, 32);
+
+//accent colors:
+$primary-accent-color: rgb(252, 224, 100);
+$alt-accent-color: rgb(209, 224, 215);
+
+//button colors:
+$primary-button-color: rgb(24, 30, 36);
+
+//font-families:
 $heading-font: "Oswald", "Times New Roman, serif";
-$content-font: "Public Sans";
+$content-font: "arial";

@@ -6,11 +6,71 @@
   font-family: "Public Sans";
   src: url(../fonts/PublicSans-Regular.otf) format("opentype");
 }
-* {
+@font-face {
+  font-family: "Oswalds";
+  src: url(../fonts/Oswald-Regular.ttf) format("truetype");
+}
+@font-face {
   font-family: "Public Sans";
+  src: url(../fonts/PublicSans-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: "Oswalds";
+  src: url(../fonts/Oswald-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url(../fonts/PublicSans-Regular.otf) format("opentype");
+}
+* {
+  text-decoration: none;
+  font-family: "arial";
   font-weight: 300;
 }
 
 body {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border-radius: 100px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+
+.cta-button-1 {
+  color: white;
+  background-color: rgb(16, 24, 32);
+}
+.cta-button-1:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgb(252, 224, 100);
+  color: rgb(16, 24, 32);
+}
+
+.cta-button-2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(16, 24, 32);
+  border: 1px solid black;
+}
+.cta-button-2:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgb(255, 255, 255);
+  color: rgb(16, 24, 32);
+}
+
+.cta-button-3 {
+  color: white;
+  background-color: rgb(16, 24, 32);
+}
+.cta-button-3:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgb(209, 224, 215);
+  color: rgb(16, 24, 32);
 }

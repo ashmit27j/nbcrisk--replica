@@ -1,0 +1,10 @@
+@import "variables";
+@mixin theme($theme: transparent) {
+  color: white;
+  background-color: $black;
+  &:hover {
+    transition: background-color 0.3s ease;
+    background-color: $theme;
+    color: $black;
+  }
+}
