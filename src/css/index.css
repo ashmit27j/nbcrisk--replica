@@ -129,6 +129,33 @@ header {
   color: rgb(16, 24, 32);
 }
 
+.toggle-container {
+  width: fit-content;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-container img {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 1160px) {
+  li {
+    display: none;
+  }
+  .desktop-menu-container {
+    width: fit-content !important;
+    padding: 0;
+    margin: 0;
+  }
+  aside {
+    display: block !important;
+  }
+  .toggle-container {
+    display: flex !important;
+  }
+}
 aside {
   display: none;
 }
