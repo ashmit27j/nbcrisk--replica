@@ -1,10 +1,22 @@
 @import "variables";
-@mixin theme($theme: transparent) {
+@mixin button-hover($button-hover: transparent) {
   color: white;
   background-color: $black;
   &:hover {
     transition: background-color 0.3s ease;
-    background-color: $theme;
+    background-color: $button-hover;
     color: $black;
+  }
+}
+@mixin alt-button-hover($alt-button-hover: transparent) {
+  //   color: white;
+  //   background-color: $black;
+  &:hover {
+    transition: background-color 0.3s ease;
+    background-color: $black;
+    color: white;
+    a {
+      color: white;
+    }
   }
 }

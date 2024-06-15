@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "Oswalds";
   src: url(../fonts/Oswald-Regular.ttf) format("truetype");
@@ -14,6 +15,13 @@
   font-family: "Public Sans";
   src: url(../fonts/PublicSans-Regular.otf) format("opentype");
 }
+.desktop-navbar-wrapper .desktop-menu-container, .desktop-navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @font-face {
   font-family: "Oswalds";
   src: url(../fonts/Oswald-Regular.ttf) format("truetype");
@@ -24,25 +32,34 @@
 }
 * {
   text-decoration: none;
-  font-family: "arial";
-  font-weight: 300;
+  font-family: public sans, "times new roman";
+  box-sizing: border-box;
+}
+
+.container-new {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  padding: 5rem 0 0 0;
+  margin: 0;
+  background-color: rgb(240, 240, 240);
 }
 
 button {
   cursor: pointer;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1.8rem;
   border-radius: 100px;
   border: none;
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 1rem;
+  font-weight: 700;
   color: rgb(255, 255, 255);
 }
 
 .cta-button-1 {
+  font-size: 1.5rem;
   color: white;
   background-color: rgb(16, 24, 32);
 }
@@ -53,10 +70,10 @@ button {
 }
 
 .cta-button-2 {
-  font-size: 1rem;
-  font-weight: 600;
   color: white;
   background-color: rgb(16, 24, 32);
+  font-size: 1rem;
+  font-weight: 600;
   border: 1px solid black;
 }
 .cta-button-2:hover {
@@ -68,9 +85,54 @@ button {
 .cta-button-3 {
   color: white;
   background-color: rgb(16, 24, 32);
+  font-size: 1.5rem;
+  border: 1px solid rgb(255, 255, 255);
 }
 .cta-button-3:hover {
   transition: background-color 0.3s ease;
   background-color: rgb(209, 224, 215);
   color: rgb(16, 24, 32);
+}
+
+header {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-navbar-wrapper {
+  width: 100%;
+  gap: 10px;
+  height: 6rem;
+}
+.desktop-navbar-wrapper .desktop-menu-container {
+  width: 50%;
+  list-style: none;
+}
+.desktop-navbar-wrapper .desktop-menu-container li {
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+}
+.desktop-navbar-wrapper .desktop-menu-container li:hover {
+  transition: background-color 0.3s ease;
+  background-color: rgb(16, 24, 32);
+  color: white;
+}
+.desktop-navbar-wrapper .desktop-menu-container li:hover a {
+  color: white;
+}
+.desktop-navbar-wrapper .desktop-menu-container li a {
+  color: rgb(16, 24, 32);
+}
+
+aside {
+  display: none;
+}
+
+.hero-container {
+  background-color: rgb(16, 24, 32);
 }

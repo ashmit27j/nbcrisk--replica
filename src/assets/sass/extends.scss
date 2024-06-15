@@ -1,9 +1,22 @@
 @import "variables";
 %button-hover-logo {
   background-color: $primary-button-color;
-  //   color: ;
   &:hover {
     background-color: $alt-accent-color;
     transition: background-color 0.3s ease;
   }
+}
+%content-text {
+  color: $primary-text-color;
+  font-size: 1rem;
+}
+%subtitle-text {
+  color: $white;
+  font-size: 0.6rem;
+}
+%flex-row-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
