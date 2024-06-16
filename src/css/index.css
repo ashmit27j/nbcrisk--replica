@@ -190,7 +190,7 @@ aside {
   height: 3rem;
   width: 100%;
   border-radius: 0.5rem;
-  border: solid 1px rgb(16, 24, 32);
+  border: solid;
   font-size: 1rem;
   font-weight: 700;
   color: rgb(16, 24, 32);
@@ -219,4 +219,13 @@ aside {
     font-size: 2rem;
     width: 20rem;
   }
+}
+.banner-svg-container {
+  width: 100vw;
+  height: 100%;
+  padding: 5rem 0;
+}
+.banner-svg-container .banner-svg {
+  width: 100%;
+  height: auto;
 }

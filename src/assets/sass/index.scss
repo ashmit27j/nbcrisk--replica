@@ -135,7 +135,7 @@ aside {
     height: 3rem;
     width: 100%;
     border-radius: 0.5rem;
-    border: solid 1px $black;
+    border: solid;
     font-size: 1rem;
     font-weight: 700;
     color: $black;
@@ -173,5 +173,14 @@ aside {
       font-size: 2rem;
       width: 20rem;
     }
+  }
+}
+.banner-svg-container {
+  width: 100vw;
+  height: 100%;
+  padding: $default-section-padding 0;
+  .banner-svg {
+    width: 100%;
+    height: auto;
   }
 }
