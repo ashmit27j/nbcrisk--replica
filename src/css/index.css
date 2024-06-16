@@ -22,6 +22,12 @@
   align-items: center;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @font-face {
   font-family: "Oswalds";
   src: url(../fonts/Oswald-Regular.ttf) format("truetype");
@@ -34,6 +40,8 @@
   text-decoration: none;
   font-family: public sans, "times new roman";
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .container-new {
@@ -146,8 +154,6 @@ header {
   }
   .desktop-menu-container {
     width: fit-content !important;
-    padding: 0;
-    margin: 0;
   }
   aside {
     display: block !important;
@@ -161,5 +167,56 @@ aside {
 }
 
 .hero-container {
-  background-color: rgb(16, 24, 32);
+  height: 35rem;
+  gap: 2rem;
+}
+.hero-container .hero-heading {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", "Times New Roman, serif";
+  font-size: 4rem;
+  font-weight: 400;
+  color: rgb(16, 24, 32);
+  line-height: 1.2;
+}
+.hero-container .hero-grid-container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "input button ";
+  gap: 2rem;
+}
+.hero-container input {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: solid 1px rgb(16, 24, 32);
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(16, 24, 32);
+}
+.hero-container input::placeholder {
+  font-weight: 400;
+}
+.hero-container button {
+  height: 3rem;
+  grid-area: button;
+}
+.hero-container p {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+.hero-container .hero-paragraph {
+  font-size: 1rem;
+  color: rgb(16, 24, 32);
+}
+
+@media screen and (max-width: 760px) {
+  .hero-container {
+    height: 30rem;
+  }
+  .hero-container .hero-heading {
+    font-size: 2rem;
+    width: 20rem;
+  }
 }

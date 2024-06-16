@@ -7,6 +7,8 @@
   // font-family: $content-font;
   font-family: $content-font;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 .container-new {
   max-width: 1220px;
@@ -93,8 +95,6 @@ header {
   }
   .desktop-menu-container {
     width: fit-content !important;
-    padding: 0;
-    margin: 0;
   }
   aside {
     display: block !important;
@@ -109,6 +109,69 @@ aside {
 }
 
 .hero-container {
-  // background-color: $alt-background-color;
-  background-color: $black;
+  height: 35rem;
+  @extend %flex-column-center;
+  gap: $default-element-padding;
+  // padding: $default-section-padding $default-sidebar-padding;
+  .hero-heading {
+    padding: 0;
+    margin: 0;
+    font-family: $heading-font;
+    font-size: 4rem;
+    font-weight: 400;
+    color: $primary-text-color;
+    line-height: $line-height;
+  }
+  .hero-grid-container {
+    width: fit-content;
+    // height: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "input button ";
+    gap: 2rem;
+  }
+  input {
+    // grid-area: input;
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: solid 1px $black;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $black;
+  }
+  input::placeholder {
+    font-weight: 400;
+  }
+  button {
+    height: 3rem;
+    grid-area: button;
+  }
+  p {
+    font-size: 1.5rem;
+    color: $white;
+  }
+  .hero-paragraph {
+    font-size: 1rem;
+    color: $primary-text-color;
+  }
+}
+@media screen and (max-width: 760px) {
+  // .hero-grid-container {
+  //   display: grid;
+  //   grid-template-columns: 300px;
+  //   grid-template-rows: 1fr 1fr;
+  //   grid-template-areas:
+  //     "input"
+  //     "button";
+  // }
+  .hero-container {
+    height: 30rem;
+  }
+  .hero-container {
+    .hero-heading {
+      font-size: 2rem;
+      width: 20rem;
+    }
+  }
 }

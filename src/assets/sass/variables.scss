@@ -17,6 +17,7 @@ $alt-background-color: rgb(240, 240, 240);
 
 //text colors:
 $primary-text-color: rgb(16, 24, 32);
+$alt-text-color: rgb(255, 255, 255);
 
 //accent colors:
 $primary-accent-color: rgb(252, 224, 100);
@@ -28,3 +29,12 @@ $primary-button-color: rgb(24, 30, 36);
 //font-families:
 $heading-font: "Oswald", "Times New Roman, serif";
 $content-font: public sans, "times new roman";
+
+//line-height:
+$line-height: 1.2;
+
+//padding:
+$default-sidebar-padding: 2rem;
+$default-element-padding: 2rem;
+$default-element-padding-mobile: 2rem;
+$default-section-padding: 5rem;
