@@ -28,6 +28,15 @@
   justify-content: center;
 }
 
+.blog-container .cards-container .blog-card .readmore-container a:hover, .blog-container .cards-container .blog-card .blog-card-heading:hover {
+  text-decoration: underline;
+}
+
+.blog-container .cards-container .blog-card:hover {
+  transform: translateY(-0.2rem);
+  transition: transform 0.3s ease;
+}
+
 @font-face {
   font-family: "Oswalds";
   src: url(../fonts/Oswald-Regular.ttf) format("truetype");
@@ -80,6 +89,7 @@ button {
 .cta-button-2 {
   color: white;
   background-color: rgb(16, 24, 32);
+  width: fit-content;
   font-size: 1rem;
   font-weight: 600;
   border: 1px solid black;
@@ -232,6 +242,11 @@ aside {
   height: auto;
 }
 
+.blog-wrapper {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
 .blog-container {
   background-color: white;
   gap: 2rem;
@@ -245,6 +260,7 @@ aside {
   line-height: 1.2;
 }
 .blog-container .cards-container {
+  padding: 2rem 0rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: auto;
@@ -254,11 +270,47 @@ aside {
   gap: 2rem;
 }
 .blog-container .cards-container .blog-card {
-  height: 20rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  grid-template-areas: "heading" "content" "readmore-date";
+  gap: 1.5rem;
+  height: 25rem;
+  padding: 1.5rem;
+  border: 2px solid rgb(238, 238, 238);
+  border-radius: 0.5rem;
   background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.blog-container .cards-container .blog-card .blog-card-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Oswald", "Times New Roman, serif";
+  color: rgb(16, 24, 32);
+  line-height: 2rem;
+}
+.blog-container .cards-container .blog-card .blog-content {
+  line-height: 24px;
+  color: #101820;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+}
+.blog-container .cards-container .blog-card .readmore-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view-more-container {
+  display: flex;
+  justify-content: center;
 }
 
-.blog-div {
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
+.division-line {
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgb(209, 224, 215);
 }

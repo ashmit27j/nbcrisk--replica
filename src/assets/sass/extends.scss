@@ -25,3 +25,15 @@
   flex-direction: column;
   justify-content: center;
 }
+%underline-on-hover {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+%float-on-hover {
+  &:hover {
+    transform: translateY(-0.2rem);
+    transition: transform 0.3s ease;
+  }
+}

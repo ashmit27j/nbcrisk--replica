@@ -10,6 +10,7 @@
 $white: rgb(255, 255, 255);
 $blue: rgb(0, 115, 255);
 $black: rgb(16, 24, 32);
+$gray: rgb(238, 238, 238);
 
 //background colors:
 $primary-background-color: rgb(255, 255, 255);
@@ -32,9 +33,13 @@ $content-font: public sans, "times new roman";
 
 //line-height:
 $line-height: 1.2;
+$alt-line-height: 2rem;
 
 //padding:
 $default-sidebar-padding: 2rem;
 $default-element-padding: 2rem;
 $default-element-padding-mobile: 2rem;
 $default-section-padding: 5rem;
+
+//border-radius:
+$subtle-border-radius: 0.5rem;
